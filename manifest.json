@@ -1,0 +1,13 @@
+{
+  "Author": "离披",
+  "InternalName": "Notifications",
+  "Name": "育成结束时发出通知",
+  "Description": "育成结束时发出通知，仅限Windows",
+  "Changelog": "",
+  "Version": "1.0.0",
+  "Dependencies": [],
+  "Targets": [],
+  "RepositoryUrl": "https://github.com/URA-Plugins/Notifications",
+  "DownloadUrl": "https://gh.shuise.dev/github.com/URA-Plugins/Notifications/releases/latest/download/Notifications.zip",
+  "LastUpdate": "1751719983"
+}

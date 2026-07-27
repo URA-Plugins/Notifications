@@ -1,30 +1,24 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <IsUraPlugin>true</IsUraPlugin>
     <TargetFramework>net10.0-windows10.0.17763.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
-	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+    <Version>1.0.0</Version>
+
+    <PluginInternalName>Notifications</PluginInternalName>
+    <PluginDisplayName>育成结束时发出通知</PluginDisplayName>
+    <PluginAuthor>离披</PluginAuthor>
+    <PluginDescription>育成结束时发出通知，仅限Windows</PluginDescription>
+    <PluginRepositoryUrl>https://github.com/URA-Plugins/Notifications</PluginRepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.3" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\UmamusumeResponseAnalyzer\UmamusumeResponseAnalyzer\UmamusumeResponseAnalyzer.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="manifest.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy /Y &quot;$(TargetPath)&quot; &quot;%25localappdata%25/UmamusumeResponseAnalyzer/Plugins/Notifications/&quot;" />
-  </Target>
 
 </Project>

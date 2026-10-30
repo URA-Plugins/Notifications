@@ -8,7 +8,8 @@
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
     <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
-    <Version>2026.9.26</Version>
+    <Version>2026.10.31</Version>
+    <PluginChangelog>更新 System.Drawing.Common 至 10.0.14，以及 Host SDK 和构建依赖。</PluginChangelog>
 
     <PluginInternalName>Notifications</PluginInternalName>
     <PluginDisplayName>育成结束时发出通知</PluginDisplayName>
@@ -19,6 +20,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.3" />
+    <PackageReference Include="System.Drawing.Common" Version="10.0.14" />
   </ItemGroup>
 
   <ItemGroup>
